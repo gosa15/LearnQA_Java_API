@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 
 
-public class EX1Parsing {
+public class EX5Parsing {
 
     @Test
     public void testAPI() {
