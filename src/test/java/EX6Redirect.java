@@ -18,6 +18,10 @@ public class EX6Redirect {
 
         String locationHeaders = response.getHeader("Location");
         System.out.println(locationHeaders);
+
+        String body = response.getBody().asString();
+
+        System.out.println(body);
     }
 
 }

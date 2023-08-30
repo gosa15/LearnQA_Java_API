@@ -4,13 +4,13 @@ import org.junit.jupiter.api.Test;
 
 public class HelloTest {
 
-   @Test
+    @Test
     public void testAPI(){
-       Response response = RestAssured
-               .get("https://playground.learnqa.ru/api/get_text")
-               .andReturn();
+        Response response = RestAssured
+                .get("https://playground.learnqa.ru/api/get_text")
+                .andReturn();
 
-       response.prettyPrint();
-   }
+        response.prettyPrint();
+    }
 
 }
