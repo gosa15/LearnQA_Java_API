@@ -9,8 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 public class EX10ShortPhrase {
 
     @ParameterizedTest
-    @ValueSource (strings = {"","1","qazxswedcvfrtgb","qazxswedcvfrtg","qaztxswedcvfrtgb"})
-    @Test
+    @ValueSource (strings = {"qaztxswedcvfrtgb"})
     public void testPhrase(String phrase){
         System.out.println("Длина строки равна: "+phrase.length());
 

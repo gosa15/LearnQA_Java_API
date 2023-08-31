@@ -5,10 +5,9 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
-import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+
 
 public class EX11Cookies {
     @Test
@@ -18,8 +17,6 @@ public class EX11Cookies {
                 .andReturn();
         Map<String, String> responseCookies = response.getCookies();
         List<String> keyCookies = new ArrayList<>(response.getCookies().keySet());
-
-        System.out.println(response.getCookies());
 
         assertEquals("hw_value", responseCookies.get("HomeWork"), "Значение куки не совпадает");
         assertEquals("HomeWork", keyCookies.get(0), "Название куки не совпадает");
