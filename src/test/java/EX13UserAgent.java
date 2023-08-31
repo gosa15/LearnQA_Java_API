@@ -21,6 +21,8 @@ public class EX13UserAgent {
                 .get("https://playground.learnqa.ru/ajax/api/user_agent_check")
                 .jsonPath();
 
+        System.out.println("User-agent: "+headerValue);
+
         assertEquals(headerValue, response.get("user_agent"), "Параметр user_agent отличается");
         assertEquals(expectedPlatform, response.get("platform"), "Параметр platform отличается");
         assertEquals(expectedBrowser, response.get("browser"), "Параметр browser отличается");
